@@ -2,7 +2,7 @@
     <div class="banner-container">
       <ul class="images" :style="{
         width:sliderArray.length*100+'%',
-        marginLeft:-index*100+'%'
+        marginLeft:-index*100+'%',
       }">
         <li v-for="(item,i) of sliderArray" :key="i" @mouseleave="autoStart" @mouseenter="autoStop">
           <a href="javascript:void(0)"><img :src=item alt=""></a>

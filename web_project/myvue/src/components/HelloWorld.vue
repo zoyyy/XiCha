@@ -9,13 +9,14 @@
     <div class="partone">
       <el-card class="Card_1">
         <div class="Card1_pic">
-        <img src="@/assets/010.png" @click="goTo('/order')" style="height: 120px;margin-top: -15px;padding: 23px"/>
-        <img src="@/assets/011.png" style="height: 120px;margin-top: -10px;padding: 17px"/>
+        <img src="@/assets/index/010.png" @click="goTo('/order')" style="height: 120px;margin-top: -15px;padding: 23px"/>
+        <img src="@/assets/index/011.png" style="height: 120px;margin-top: -10px;padding: 17px"/>
         </div>
         <hr noshade="true" style="height:1px;background-color:#FAFAFA;border: none">
         <div class="Card1_body">
-          <el-button style="float: left; padding: 14px 0;font-size: 10px;border:none" type="text_m1">好友拼单</el-button>
-          <el-button style="float: right; padding: 14px 0;font-size: 5px;border:none" type="text_s1">拼单喝茶，分账更方便</el-button>
+          <img class="pindan-img" src="@/assets/index/012.png">
+          <el-button style="float: left; padding: 14px 0;font-size: 18px;border:none" type="text_m1">好友拼单</el-button>
+          <el-button style="float: right; padding: 14px 0;font-size: 18px;border:none" type="text_s1">拼单喝茶，分账更方便</el-button>
         </div>
       </el-card>
     </div>
@@ -23,13 +24,13 @@
 
     <div class="parttwo">
       <el-card :body-style="{ padding: '0px' }" class="Card_2">
-        <img src="@/assets/013.png" @click="goTo('/goods')" style="height: 120px" class="card2_image"/>
+        <img src="@/assets/index/013.png" @click="goTo('/goods')" style="height: 120px" class="card2_image"/>
       </el-card>
       <el-card :body-style="{ padding: '0px' }" class="Card_2">
-        <img src="@/assets/014.png" style="height: 120px" class="card2_image"/>
+        <img src="@/assets/index/014.png" style="height: 120px" class="card2_image"/>
       </el-card>
       <el-card :body-style="{ padding: '0px' }" class="Card_2">
-        <img src="@/assets/015.png" style="height: 120px" class="card2_image"/>
+        <img src="@/assets/index/015.png" style="height: 120px" class="card2_image"/>
       </el-card>
     </div>
     <!--最后一个小盒子~-->
@@ -41,9 +42,9 @@
 
 <script>
 import slider from "./Slider/slider"
-import banner1 from "../assets/banner1.png"
-import banner2 from "../assets/banner2.png"
-import banner3 from "../assets/banner3.png"
+import banner1 from "../assets/slider/banner1.png"
+import banner2 from "../assets/slider/banner2.png"
+import banner3 from "../assets/slider/banner3.png"
 export default {
   methods: {
     goTo (path) {
@@ -99,6 +100,11 @@ body {
   display:-webkit-flex;
   display: flex;
   justify-content: space-around;
+}
+.pindan-img{
+  width: 20px;
+  float: left;
+  padding: 14px 10px 14px 0;
 }
 .parttwo{
   width: 340px;

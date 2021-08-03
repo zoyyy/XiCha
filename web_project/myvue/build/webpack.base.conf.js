@@ -78,5 +78,19 @@ module.exports = {
     net: 'empty',
     tls: 'empty',
     child_process: 'empty'
+  },
+  devServer:{
+    proxy: {
+      '/apis/':{
+        target: 'http://127.0.0.1:8000/',
+        pathRewrite: {'^/apis/': '/'},
+        changeOrigin: true
+      }
+    },
+    // Various Dev Server settings
+    host: '127.0.0.1', // can be overwritten by process.env.HOST
+    port: 8080 // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+
   }
 }
+

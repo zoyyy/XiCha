@@ -45,6 +45,22 @@ export default new Router({
       meta:{
         showFooter:true
       }
-    }
+    },
+    {
+      path:'/register',
+      name:'Register',
+      component: () => import('../views/Register.vue')
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: () => import('../views/Login.vue')
+    },
+    {
+      path: '/info',
+      name: 'Info',
+      component: () => import('../views/Info.vue')
+    },
+
   ]
 })
