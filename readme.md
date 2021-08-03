@@ -1,5 +1,2 @@
-superuser 用户名admin
-
-email：1308435934@qq.com
-
-密码：aeiou1024
+web_project为前端部分
+web——project2为后端部分
